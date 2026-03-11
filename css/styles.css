@@ -266,7 +266,7 @@ section {
 
 /* About Section */
 .about {
-    background-color: var(--background-color);
+    background-color: linear-gradient(120deg, #fdf8f5 0%, #f0d8e5 100%);
 }
 
 .about-content {
