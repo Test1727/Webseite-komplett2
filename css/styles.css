@@ -271,8 +271,8 @@ section {
 
 .about-content {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 90px;
+    grid-template-columns: 3fr 1fr;
+    gap: 50px;
     align-items: flex-start;
 }
 
