@@ -479,16 +479,25 @@ section {
         margin-top: 20px;  /* NEU */
     }
 
-    
+
+
     .hero-brain {
-        height: 200% !important;  /* Doppelte Höhe */
-        top: -50% !important;  /* Nach oben ziehen */
-        left: -60% !important;
-        transform: rotate(-90deg) scale(1.5);  /* Noch größer */
+        height: 250% !important;
+        top: -80% !important;  /* Mehr nach oben */
+        left: -70% !important;
+        transform: rotate(-90deg) scale(1.8);  /* Noch größer */
         width: auto;
         object-fit: cover;
-     }
+    }
+    
+    .hero {
+        min-height: 100vh;  /* Volle Höhe erzwingen */
+        overflow: hidden;  /* Abschneiden verhindern */
+    }
 }
+    
+    
+
 
 
     
