@@ -463,7 +463,7 @@ section {
     position: absolute;
     left: 0;
     top: 0;
-    width: 120%;
+    width: 200%;
     height: 100%;
     transform: rotate(-90deg) scale(1.2);  /* Drehen + evtl. skalieren */
     object-fit: cover;
