@@ -167,7 +167,7 @@ img {
     transform: translateX(-50%);
     width: 80px;
     height: 4px;
-    background-color: #3e92cc;
+    background: linear-gradient(to right, #0a1a2f, #3e92cc); 
     border-radius: 2px;
 }
 
