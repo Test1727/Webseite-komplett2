@@ -479,20 +479,20 @@ section {
         margin-top: 20px;  /* NEU */
     }
 
-
+    
     .hero-brain {
-        height: 100% !important;  /* Volle Höhe */
-        top: 0 !important;  /* Nicht nach oben schieben */
-        left: -60% !important;  /* Evtl. mehr nach links */
-        transform: rotate(-90deg) scale(1.2);  /* Größer skalieren */
+        height: 200% !important;  /* Doppelte Höhe */
+        top: -50% !important;  /* Nach oben ziehen */
+        left: -60% !important;
+        transform: rotate(-90deg) scale(1.5);  /* Noch größer */
         width: auto;
         object-fit: cover;
-    }
+     }
 }
 
 
     
-}
+
 
 /* Tablet (769px - 992px) */
 @media (min-width: 769px) and (max-width: 992px) {
