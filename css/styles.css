@@ -229,7 +229,6 @@ nav ul li a:hover, nav ul li a.active {
 
 
 
-
 /* Für ALLE Geräte - Sprachumschalter und Resume Button nebeneinander */
 .header-right {
     display: flex;
@@ -243,7 +242,7 @@ nav ul li a:hover, nav ul li a.active {
     font-size: 0.85rem;
     background-color: transparent;
     color: var(--primary-color);
- border: 2px solid #00ffff !important; /* Türkis erzwungen */
+    border: 2px solid #00ffff !important;
     border-radius: var(--border-radius);
     font-weight: 500;
     line-height: 1.2;
@@ -260,16 +259,29 @@ nav ul li a:hover, nav ul li a.active {
     box-shadow: none !important;
 }
 
-.language-selector select:hover {
-    background-color: #00ffff;
+/* WICHTIG: So wird bei Touch/Hover gefüllt */
+.language-selector select:hover,
+.language-selector select:active {  /* :active für Touch-Zustand */
+    background-color: #00ffff !important;  /* Gefüllt bei Touch */
     color: var(--primary-color);
-    border-color: #00ffff;
+    border-color: #00ffff !important;
 }
 
+/* Damit die Optionen lesbar bleiben */
 .language-selector select option {
     background: white;
     color: var(--primary-color);
 }
+
+/* Für Touch-Geräte speziell */
+@media (hover: none) and (pointer: coarse) {
+    .language-selector select:active {
+        background-color: #00ffff !important;
+    }
+}
+
+
+
 
 .resume-btn {
     height: 36px;
