@@ -624,30 +624,62 @@ section {
         text-decoration: none;
     }
 
-    /* Header Höhe reduzieren */
+
+
+    /* Header gesamte Höhe reduzieren */
     header {
-        padding: 0.5rem 0 !important;
-        min-height: 60px !important;
+        padding: 0.2rem 0 !important;     /* Weniger Padding */
+        min-height: 50px !important;      /* Kleinere Mindesthöhe */
     }
     
+    /* Logo kleiner und weniger Abstand */
     .logo {
-        font-size: 1.4rem !important;
-        margin: 5px 0 !important;
+        font-size: 1.2rem !important;      /* Kleinere Schrift */
+        margin: 2px 0 !important;          /* Weniger Abstand */
+        line-height: 1.2 !important;       /* Kleinere Zeilenhöhe */
     }
     
+    /* Navigation kompakter */
     nav ul {
-        margin: 5px 0 !important;
-        gap: 10px !important;
+        margin: 2px 0 !important;          /* Weniger Abstand */
+        gap: 5px !important;               /* Kleinere Lücken */
     }
     
     nav ul li {
-        margin: 0 8px !important;
+        margin: 0 5px !important;          /* Weniger Abstand */
     }
     
     nav ul li a {
-        font-size: 0.9rem !important;
+        font-size: 0.8rem !important;      /* Kleinere Schrift */
+        padding: 2px 0 !important;         /* Weniger Innenabstand */
+    }
+    
+    /* Header Container */
+    .header .container {
+        padding-top: 2px !important;
+        padding-bottom: 2px !important;
+        gap: 2px !important;                /* Abstand zwischen Elementen */
+    }
+    
+    /* Header Right Bereich */
+    .header-right {
+        margin: 2px auto !important;        /* Weniger Außenabstand */
+        gap: 5px !important;                /* Kleinere Lücke zwischen Buttons */
+    }
+    
+    /* Sprachselector und Button etwas kleiner */
+    .header-right .language-selector select,
+    .header-right .resume-btn {
+        height: 36px !important;            /* Von 44px auf 36px */
+        min-height: 36px !important;
+        max-height: 36px !important;
+        line-height: 32px !important;       /* Angepasst */
+        font-size: 0.8rem !important;       /* Kleinere Schrift */
     }
 }
+
+
+    
 
 
 
