@@ -199,7 +199,7 @@ nav ul li a {
     
     .timeline-item::after {       
         transform: translateX(-50%);  /* Zentriert den Punkt genau */
-        left: 50px;
+        left: 20px;
     }
     
     .timeline-date {
