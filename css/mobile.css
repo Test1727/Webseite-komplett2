@@ -198,7 +198,7 @@ nav ul li a {
     }
     
     .timeline-item::after {
-        left: 10px;
+        left: 20px;
     }
     
     .timeline-date {
