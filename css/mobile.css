@@ -86,7 +86,7 @@
     
 
     
-    /* === HEADER - EXAKT WIE ORIGINAL === */
+    /* === HEADER === */
     header .container {
         display: flex;
         flex-direction: column;
@@ -166,9 +166,6 @@ nav ul li a {
     padding: 2px 5px !important;
 }
 
-
-    
-
     
     /* === ALLGEMEINE LAYOUTS === */
     
@@ -201,7 +198,7 @@ nav ul li a {
 .timeline-item:nth-child(even)::after {
     transform: translateX(-50%);
     left: 20px !important;
-}
+  }
     
  
     
@@ -213,6 +210,70 @@ nav ul li a {
         margin-bottom: 10px;
         right: auto !important;
         left: auto !important;
+    }
+
+   /* === FILMSTREIFEN ANPASSUNGEN === */
+    .projects-carousel {
+        padding: 30px 0 30px 0;  /* Weniger Padding oben/unten */
+    }
+    
+    .project-card-carousel {
+        height: 480px;  /* Reduzierte Höhe für Smartphone */
+        min-height: 480px;
+    }
+    
+    .carousel-image {
+        height: 180px;  /* Kleinere Bilder */
+    }
+    
+    .carousel-header {
+        padding: 0.8rem;  /* Weniger Padding */
+    }
+    
+    .carousel-header h3 {
+        font-size: 1rem;  /* Kleinere Schrift */
+    }
+    
+    .carousel-header p {
+        font-size: 0.7rem;
+    }
+    
+    .carousel-body {
+        padding: 0.8rem;
+    }
+    
+    .carousel-body li {
+        font-size: 0.75rem;  /* Kleinere Schrift in der Liste */
+        margin-bottom: 0.4rem;
+    }
+    
+    .carousel-tags {
+        padding: 0.8rem 0.8rem 1rem;
+        gap: 0.3rem;
+    }
+    
+    .carousel-tag {
+        font-size: 0.6rem;  /* Kleinere Tags */
+        padding: 0.15rem 0.5rem;
+    }
+    
+    /* Navigation Buttons etwas kleiner */
+    .carousel-button {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+    
+    
+    /* Dots etwas kleiner */
+    .carousel-dots {
+        gap: 8px;
+        margin-top: 15px;
+    }
+    
+    .carousel-dot {
+        width: 10px;
+        height: 10px;
     }
 }
 
@@ -247,5 +308,23 @@ nav ul li a {
     nav ul li a {
         font-size: 0.7rem !important;
     }
+
+  /*  Filmstreifen */
+    .project-card-carousel {
+        height: 440px;
+        min-height: 440px;
+    }
+    
+    .carousel-image {
+        height: 160px;
+    }
+    
+    .carousel-header h3 {
+        font-size: 0.9rem;
+    }
+    
+    .carousel-body li {
+        font-size: 0.7rem;
+    }    
 }
 
