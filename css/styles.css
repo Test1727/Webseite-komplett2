@@ -901,6 +901,12 @@ textarea {
     outline: none;
 }
 
+/* Placeholder weiter unten durch Padding */
+textarea::placeholder {
+    color: #a0c0e0;
+    opacity: 0.9;
+    padding-top: 5px;  /* Zusätzlicher Platz im Placeholder */
+}
 
 
 
