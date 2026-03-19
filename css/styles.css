@@ -1263,7 +1263,34 @@ section {
 
 .contact-content p {
     margin: 0.5rem 0;
+   text-align: left;
 }
+
+
+
+
+
+
+
+
+
+.contact-box {
+    text-align: left;
+}
+
+.contact-box h3 {
+    text-align: center;
+}
+
+
+
+.contact-content a {
+    text-align: left;
+}
+
+
+
+
 
 /* ===== CONTACT FORM ===== */
 .contact-form-container {
