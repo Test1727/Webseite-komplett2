@@ -1276,6 +1276,17 @@ section {
 }
 
 
+/*  KONTAKT-LINKS BEI SCHMALEN Ansichten */
+    .contact-content a {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        word-break: break-all;
+        hyphens: auto;
+        display: inline-block;
+        max-width: 100%;
+        white-space: normal;
+         text-align: left;
+    }
 
 
 
@@ -1292,10 +1303,6 @@ section {
 }
 
 
-
-.contact-content a {
-    text-align: left;
-}
 
 
 
