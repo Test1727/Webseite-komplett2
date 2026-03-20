@@ -26,10 +26,11 @@
     box-sizing: border-box;
 }
 
-html {
+/*html {
     scroll-behavior: smooth;   
     scroll-margin-top: 70px;   
-}
+}*/
+
 
 
 
@@ -1571,8 +1572,9 @@ footer p {
    ======================================== */
 
 section[id] {
-    scroll-margin-top: 70px;
-}
+    scroll-margin-top: calc(70px + 0.1rem); /* 70px für Header + kleiner Puffer */
+    scroll-behavior: smooth;
+
 
 
 
