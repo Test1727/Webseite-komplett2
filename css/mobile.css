@@ -313,10 +313,11 @@ nav ul li a {
         height: 8px;
     }
 
-              .carousel-slide {
-                width: calc(100% - 0px);
-                border-right: none;
-            }
+    .carousel-slide {
+    width: 100%;  /* Jeder Slide nimmt die volle Breite */
+    flex: 0 0 auto;
+}
+       
             
             .safety-film-left, 
             .safety-film-right {
