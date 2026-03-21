@@ -1,7 +1,5 @@
-/* Smartphone (bis 768px) */
+/* Smartphone & Tablet (bis 768px) */
 @media (max-width: 768px) {
-
-    
     
     /* === HEADER & NAVIGATION - 3 OBEN, 3 UNTEN === */
     
@@ -102,12 +100,10 @@
         border-width: 1.5px !important;
     }
     
-    
-    
     /* === ALLGEMEINE LAYOUTS === */
     html {
-    scroll-padding-top: 100px;
-    
+        scroll-padding-top: 100px;
+    }
 
     section {
         padding: 60px 0;
@@ -118,15 +114,23 @@
         padding-top: 100px !important;
         min-height: 110vh !important;
         overflow: hidden;
+        position: relative;
     }
     
     .hero-brain {
+        /* Vertikale Ausrichtung beibehalten - KEINE ROTATION MEHR */
+        position: absolute;
         height: 300% !important;
-        min-width: 300% !important;
+        width: auto !important;
+        min-width: auto !important;
+        max-width: none;
         bottom: -10% !important;
-        left: -100% !important;
-        transform: rotate(-90deg) scale(1.5) !important;
+        left: -80% !important;
+        right: auto !important;
+        top: auto !important;
+        transform: rotate(0deg) scale(1.2) !important;
         opacity: 0.3;
+        pointer-events: none;
     }
 
     .hero .container {
@@ -137,6 +141,8 @@
         min-height: 100vh;
         padding-top: 60px;
         padding-bottom: 20px;
+        position: relative;
+        z-index: 2;
     }
     
     /* Hero Content - Textbereich */
@@ -389,51 +395,10 @@
     .contact-content a {
         word-break: break-all !important;
     }
-
-    /*section[id] {
-        scroll-margin-top: 20px !important;
-    }*/
 }
 
-
-
-   @media (max-width: 992px) {
-            .carousel-slide {
-                width: calc(50% - 2px);
-            }
-        }
-
-
-
-
-
-
-        /* Desktop - SAFETY FILM sichtbar */
-        @media (min-width: 769px) {
-            .safety-film-left, 
-            .safety-film-right {
-                display: block;
-            }
-        }
-
-    
-}
-
-/* Kleine Smartphones (bis 480px) */
+/* Kleine Smartphones (bis 480px) - ZUSÄTZLICHES MEDIA QUERY */
 @media (max-width: 480px) {
-    .hero {
-        overflow-x: hidden;
-    }
-
-      .hero-brain {
-        left: -120% !important;  /* Weiter nach links schieben */
-        min-width: 400% !important;  /* Noch größer machen */
-        transform: rotate(-90deg) scale(1.8) !important;  /* Skalierung anpassen */
-    }
-
-
-
-    
     .hero-content h1 {
         font-size: 2.2rem;
     }
@@ -469,13 +434,13 @@
         font-size: 0.7rem !important;
     }
 
-h4[data-i18n="exp1_subtitle_strategic"] {
+    h4[data-i18n="exp1_subtitle_strategic"] {
         margin-top: 0.75rem !important;
         font-size: 1rem;
     }
     
-  /*  Filmstreifen */
-        .project-card-carousel {
+    /* Filmstreifen */
+    .project-card-carousel {
         height: 380px;
         min-height: 380px;
     }
@@ -495,5 +460,12 @@ h4[data-i18n="exp1_subtitle_strategic"] {
     .carousel-tag {
         font-size: 0.5rem;
     }
+    
+    /* Hero Brain für kleine Smartphones anpassen */
+    .hero-brain {
+        left: -120% !important;
+        height: 350% !important;
+        transform: scale(1) !important;
+        opacity: 0.25;
+    }
 }
-
