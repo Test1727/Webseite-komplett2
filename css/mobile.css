@@ -421,6 +421,10 @@
 
 /* Kleine Smartphones (bis 480px) */
 @media (max-width: 480px) {
+    .hero {
+        overflow: hidden;
+    }
+    
     .hero-content h1 {
         font-size: 2.2rem;
     }
