@@ -20,6 +20,12 @@
         margin: 0 !important;
     }
     
+    /* Slides anpassen */
+    .carousel-slide {
+        width: calc(50% - 2px) !important;
+        max-width: 350px !important;
+    }
+    
     * {
         box-sizing: border-box !important;
     }
