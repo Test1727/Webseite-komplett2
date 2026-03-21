@@ -27,10 +27,13 @@
     }
     
     .carousel-slide {
-        width: calc(50% - 20px) !important;
-        max-width: 380px !important;
         flex: 0 0 auto !important;
+        width: calc(50% - 2px);
+        min-width: 260px;
+        max-width: 340px;
     }
+
+    
     
     .project-card-carousel {
         max-width: 380px !important;
