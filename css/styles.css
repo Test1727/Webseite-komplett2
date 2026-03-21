@@ -32,16 +32,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Entfernen Sie alle section[id] Regeln */
-
-
-/*html {
-    scroll-behavior: smooth;   
-    scroll-margin-top: 70px;   
-}*/
-
-
-
 
 body {
     font-family: var(--font-secondary);
@@ -1538,26 +1528,6 @@ label[for="contact-message"] {
     text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ========================================
    FOOTER
    ======================================== */
@@ -1576,12 +1546,6 @@ footer p {
 }
 
 
-/* ========================================
-   SCROLL VERHALTEN
-   ======================================== */
-
-/*section[id] {
-    scroll-margin-top: calc(70px + 0.1rem); /* 70px für Header + kleiner Puffer */*/
 
 
 
