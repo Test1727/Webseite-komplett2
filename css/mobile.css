@@ -30,7 +30,7 @@
         flex: 0 0 auto !important;
         width: calc(50% - 2px);
         min-width: 260px;
-        max-width: 200px;
+        max-width: 300px !important;
     }
 
     .projects-carousel {
